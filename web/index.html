@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+  <title>memory_game_web</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+  <script defer src="main.dart.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121998481-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121998481-1');
+  </script>
+</head>
+
+<body>
+  <header class="mg-header">
+    <h1>Memory Game</h1>
+    <div class="action-btns">
+      <button class="action-btns__start" disabled>Start</button>
+      <button class="action-btns__reset" disabled>Reset</button>
+    </div>
+  </header>
+
+  <main>
+    <aside id="timer"></aside>
+    <div id="output">Loading...</div>
+  </main>
+
+  <div id="modal" hidden>
+    <div class="modal__content">
+      <button id="modal-close">&times;</button>
+      <h2>You're Awesome!</h2>
+      <p class="modal__content__completion-time"></p>
+      <button class="action-btns__replay-game">Play again?</button>
+      <h3>Be more awesome by sharing</h3>
+      <ul>
+        <li>
+          <a href="https://twitter.com/home?status=Wondering%20how%20to%20improve%20your%20memory%20%F0%9F%A7%A0?%20Check%20out%20this%20game!%20%F0%9F%8E%AE%F0%9F%92%A5Built%20with%20%23dartlang%20%23html5%20%23css3%20%23cssgrid%20by%20%40graphicbeacon%20https%3A//memorygameweb.herokuapp.com"
+            title="Twitter" class="share--twitter">
+            <span class="fa fa-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/sharer.php?u=https://memorygameweb.herokuapp.com" title="Facebook" class="share--facebook">
+            <span class="fa fa-facebook"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://plus.google.com/share?url=https://memorygameweb.herokuapp.com" title="Google Plus" class="share--google">
+            <span class="fa fa-google"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="mg-footer">
+    <p>Built with
+      <a href="https://www.dartlang.org" target="_blank">Dart</a> by
+      <a href="https://twitter.com/graphicbeacon" target="_blank">Jermaine Oppong</a>
+      <br />
+      <a href="https://github.com/graphicbeacon/memory-game-web" target="_blank">View source on Github</a>
+    </p>
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+
+</html>
